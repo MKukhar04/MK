@@ -1,0 +1,486 @@
+{
+  "VERSION": "1.0",
+  "ROOM": {
+    "GLB_PATH": "./assets/room.glb",
+    "SCALE": 1,
+    "POSITION": [
+      0,
+      0,
+      0
+    ],
+    "ROTATION": [
+      0,
+      0,
+      0
+    ]
+  },
+  "PLAYER": {
+    "HEIGHT": 1.65,
+    "START_POSITION": [
+      0,
+      0,
+      2.5
+    ]
+  },
+"LIGHTS": {
+    "LIST": [
+      {
+        "TYPE": "ambient",
+        "COLOR": "#ffffff",
+        "INTENSITY": 0.45,
+        "POSITION": [0, 0, 0],
+        "ROTATION": [0, 0, 0]
+      },
+      {
+        "TYPE": "directional",
+        "COLOR": "#fffaf0",
+        "INTENSITY": 1.5,
+        "POSITION": [15.0, 15.0, 12.0],
+        "ROTATION": [0, 0, 0],
+        "CAST_SHADOW": true
+      },
+      {
+        "TYPE": "directional",
+        "COLOR": "#eaf2f8",
+        "INTENSITY": 0.5,
+        "POSITION": [-15.0, 10.0, -15.0],
+        "ROTATION": [0, 0, 0],
+        "CAST_SHADOW": false
+      },
+      {
+        "TYPE": "directional",
+        "COLOR": "#ffffff",
+        "INTENSITY": 0.65, 
+        "POSITION": [10.0, -20.0, 5.0],
+        "ROTATION": [0, 0, 0],
+        "CAST_SHADOW": false
+      },
+      {
+        "TYPE": "point",
+        "COLOR": "#fff5e6",
+        "INTENSITY": 0.5,
+        "POSITION": [3.14, 2.0, 4.07],
+        "ROTATION": [0, 0, 0],
+        "CAST_SHADOW": false
+      },
+      {
+        "TYPE": "point",
+        "COLOR": "#fff5e6",
+        "INTENSITY": 0.5,
+        "POSITION": [10.0, 2.0, 4.07],
+        "ROTATION": [0, 0, 0],
+        "CAST_SHADOW": false
+      },
+      {
+        "TYPE": "point",
+        "COLOR": "#fff5e6",
+        "INTENSITY": 0.5,
+        "POSITION": [16.9, 2.0, 4.07],
+        "ROTATION": [0, 0, 0],
+        "CAST_SHADOW": false
+      },
+      {
+        "TYPE": "point",
+        "COLOR": "#fff5e6",
+        "INTENSITY": 0.5,
+        "POSITION": [3.14, 2.0, -3.7],
+        "ROTATION": [0, 0, 0],
+        "CAST_SHADOW": false
+      },
+      {
+        "TYPE": "point",
+        "COLOR": "#fff5e6",
+        "INTENSITY": 0.5,
+        "POSITION": [10.0, 2.0, -3.7],
+        "ROTATION": [0, 0, 0],
+        "CAST_SHADOW": false
+      },
+      {
+        "TYPE": "point",
+        "COLOR": "#fff5e6",
+        "INTENSITY": 0.5,
+        "POSITION": [16.9, 2.0, -3.7],
+        "ROTATION": [0, 0, 0],
+        "CAST_SHADOW": false
+      }
+    ]
+  },
+  "MATERIAL_OVERRIDES": [
+    {
+      "MATERIAL_NAME": "MAT_WALL_01",
+      "COLOR": "#EDE5D9FF",
+      "METALNESS": 0.0,
+      "ROUGHNESS": 0.95
+    },
+    {
+      "MATERIAL_NAME": "MAT_WALL_02",
+      "COLOR": "#f0f0f0",
+      "METALNESS": 0.0,
+      "ROUGHNESS": 0.95
+    },
+    {
+      "MATERIAL_NAME": "MAT_WALL_03",
+      "COLOR": "#eaeaea",
+      "METALNESS": 0.0,
+      "ROUGHNESS": 0.95
+    },
+    {
+      "MATERIAL_NAME": "MAT_WALL_04",
+      "COLOR": "#f5f5f5",
+      "METALNESS": 0.0,
+      "ROUGHNESS": 0.95
+    },
+    {
+      "MATERIAL_NAME": "MAT_NICHE_ALL",
+      "COLOR": "#4A6580FF",
+      "METALNESS": 0.0,
+      "ROUGHNESS": 0.70
+    },
+    {
+      "MATERIAL_NAME": "MAT_FLOOR",
+      "COLOR": "#222222",
+      "METALNESS": 0.0,
+      "ROUGHNESS": 0.85
+    },
+    {
+      "MATERIAL_NAME": "MAT_CEILING",
+      "COLOR": "#E7DAC5FF",
+      "METALNESS": 0.0,
+      "ROUGHNESS": 0.98
+    },
+    {
+      "MATERIAL_NAME": "MAT_BASEBOARD",
+      "COLOR": "#E7DAC5FF",
+      "METALNESS": 0.0,
+      "ROUGHNESS": 0.7
+    }
+  ],
+  "SLOTS": [
+    {
+      "SLOT_ID": "SLOT_01",
+      "HOOK_NAME": "HOOK_01",
+      "FRAME_NAME": "FRM_01",
+      "INNER_W": 2.6,
+      "INNER_H": 1.6,
+      "IMAGE_OFFSET": 0.01
+    },
+    {
+      "SLOT_ID": "SLOT_02",
+      "HOOK_NAME": "HOOK_02",
+      "FRAME_NAME": "FRM_02",
+      "INNER_W": 2.6,
+      "INNER_H": 1.6,
+      "IMAGE_OFFSET": 0.01
+    },
+    {
+      "SLOT_ID": "SLOT_03",
+      "HOOK_NAME": "HOOK_03",
+      "FRAME_NAME": "FRM_03",
+      "INNER_W": 2.6,
+      "INNER_H": 1.6,
+      "IMAGE_OFFSET": 0.01
+    },
+    {
+      "SLOT_ID": "SLOT_04",
+      "HOOK_NAME": "HOOK_04",
+      "FRAME_NAME": "FRM_04",
+      "INNER_W": 2.6,
+      "INNER_H": 1.6,
+      "IMAGE_OFFSET": 0.01
+    },
+    {
+      "SLOT_ID": "SLOT_05",
+      "HOOK_NAME": "HOOK_05",
+      "FRAME_NAME": "FRM_05",
+      "INNER_W": 1.3,
+      "INNER_H": 0.8,
+      "IMAGE_OFFSET": 0.01
+    },
+    {
+      "SLOT_ID": "SLOT_06",
+      "HOOK_NAME": "HOOK_06",
+      "FRAME_NAME": "FRM_06",
+      "INNER_W": 1.3,
+      "INNER_H": 0.8,
+      "IMAGE_OFFSET": 0.01
+    },
+    {
+      "SLOT_ID": "SLOT_07",
+      "HOOK_NAME": "HOOK_07",
+      "FRAME_NAME": "FRM_07",
+      "INNER_W": 1.3,
+      "INNER_H": 0.8,
+      "IMAGE_OFFSET": 0.01
+    },
+    {
+      "SLOT_ID": "SLOT_08",
+      "HOOK_NAME": "HOOK_08",
+      "FRAME_NAME": "FRM_08",
+      "INNER_W": 1.3,
+      "INNER_H": 0.8,
+      "IMAGE_OFFSET": 0.01
+    },
+    {
+      "SLOT_ID": "SLOT_09",
+      "HOOK_NAME": "HOOK_09",
+      "FRAME_NAME": "FRM_09",
+      "INNER_W": 1.3,
+      "INNER_H": 0.8,
+      "IMAGE_OFFSET": 0.01
+    },
+    {
+      "SLOT_ID": "SLOT_10",
+      "HOOK_NAME": "HOOK_10",
+      "FRAME_NAME": "FRM_10",
+      "INNER_W": 0.92,
+      "INNER_H": 1.3,
+      "IMAGE_OFFSET": 0.01
+    },
+        {
+      "SLOT_ID": "SLOT_11",
+      "HOOK_NAME": "HOOK_11",
+      "FRAME_NAME": "FRM_11",
+      "INNER_W": 0.92,
+      "INNER_H": 1.3,
+      "IMAGE_OFFSET": 0.01
+    },
+        {
+      "SLOT_ID": "SLOT_12",
+      "HOOK_NAME": "HOOK_12",
+      "FRAME_NAME": "FRM_12",
+      "INNER_W": 0.92,
+      "INNER_H": 1.3,
+      "IMAGE_OFFSET": 0.01
+    },
+        {
+      "SLOT_ID": "SLOT_13",
+      "HOOK_NAME": "HOOK_13",
+      "FRAME_NAME": "FRM_13",
+      "INNER_W": 0.92,
+      "INNER_H": 1.3,
+      "IMAGE_OFFSET": 0.01
+    },
+        {
+      "SLOT_ID": "SLOT_14",
+      "HOOK_NAME": "HOOK_14",
+      "FRAME_NAME": "FRM_14",
+      "INNER_W": 0.92,
+      "INNER_H": 1.3,
+      "IMAGE_OFFSET": 0.01
+    },
+        {
+      "SLOT_ID": "SLOT_15",
+      "HOOK_NAME": "HOOK_15",
+      "FRAME_NAME": "FRM_15",
+      "INNER_W": 1.9,
+      "INNER_H": 1.9,
+      "IMAGE_OFFSET": 0.01
+    },
+        {
+      "SLOT_ID": "SLOT_16",
+      "HOOK_NAME": "HOOK_16",
+      "FRAME_NAME": "FRM_16",
+      "INNER_W": 1.9,
+      "INNER_H": 1.9,
+      "IMAGE_OFFSET": 0.01
+    },
+        {
+      "SLOT_ID": "SLOT_17",
+      "HOOK_NAME": "HOOK_17",
+      "FRAME_NAME": "FRM_17",
+      "INNER_W": 1.9,
+      "INNER_H": 1.9,
+      "IMAGE_OFFSET": 0.01
+    },
+        {
+      "SLOT_ID": "SLOT_18",
+      "HOOK_NAME": "HOOK_18",
+      "FRAME_NAME": "FRM_18",
+      "INNER_W": 1.9,
+      "INNER_H": 1.9,
+      "IMAGE_OFFSET": 0.01
+    }
+  ],
+  "WORKS": [
+    {
+      "WORK_ID": "W01",
+      "FILE": "WORK_01.jpg",
+      "TITLE": "Серія годинників",
+      "AUTHOR": "Кухар Михайло",
+      "YEAR": 2023,
+      "TECHNIQUE": "SolidWorks, Keyshot",
+      "DESCRIPTION": "Формоутворення виробу «ЛІНІЄЮ», «ПЛОЩИНОЮ», «ОБ'ЄМОМ»",
+      "SLOT_ID": "SLOT_01"
+    },
+    {
+      "WORK_ID": "W02",
+      "FILE": "WORK_02.jpg",
+      "TITLE": "Годинник «ALARM»",
+      "AUTHOR": "Кухар Михайло",
+      "YEAR": 2026,
+      "TECHNIQUE": "SolidWorks, 3Д-друк, дерево",
+      "DESCRIPTION": "Дизайн «ALARM» поєднує природне тепло дерева з індустріальною естетикою бетону, що ідеально пасує інтер’єрам у стилі скандинавського мінімалізму чи джапанді. Класична форма годинника у сучасній інтерпретації та нейтральна кольорова гама дозволяють йому гармонійно вписатися в будь-який простір. Продумана конструкція забезпечує легке збирання та розбирання виробу.",
+      "SLOT_ID": "SLOT_02"
+    },
+    {
+      "WORK_ID": "W03",
+      "FILE": "WORK_03.jpg",
+      "TITLE": "Зона відпочинку «Idle Green»",
+      "AUTHOR": "Кухар Михайло, Кулешова Катерина, Читов Нікіта",
+      "YEAR": 2025,
+      "TECHNIQUE": "SolidWorks, Blender, Figma",
+      "DESCRIPTION": "Проєкт зони відпочинку у Саду ім. Тараса Шевченка у м. Харків",
+      "SLOT_ID": "SLOT_03"
+    },
+    {
+      "WORK_ID": "W04",
+      "FILE": "WORK_04.jpg",
+      "TITLE": "RHYTM OF LIGHT",
+      "AUTHOR": "Кухар Михайло",
+      "YEAR": 2025,
+      "TECHNIQUE": "SolidWorks, Blender",
+      "DESCRIPTION": "Серія інсталяцій з нержавіючох сталі з підсвіткою, натхнені північним сяйвом",
+      "SLOT_ID": "SLOT_04"
+    },
+    {
+      "WORK_ID": "W05",
+      "FILE": "WORK_05.jpg",
+      "TITLE": "Студія дизайну інтер'єру «SERENE»",
+      "AUTHOR": "Кухар Михайло",
+      "YEAR": 2024,
+      "TECHNIQUE": "Blender, SolidWorks",
+      "DESCRIPTION": "Хол студії Serene — це багатофункціональний простір для прийому клієнтів та виставок, що об'єднує головну залу, зону відпочинку та окрему зону для презентацій. Інтер'єр, виконаний із дерева, сталі та керамограніту в бежево-чорних тонах, створює професійну та елегантну атмосферу. Гнучка система освітлення з трековими світильниками та LED-акцентами підкреслює ключові елементи дизайну студії.",
+      "SLOT_ID": "SLOT_05"
+    },
+    {
+      "WORK_ID": "W06",
+      "FILE": "WORK_06.jpg",
+      "TITLE": "Дизайн інтер'єру «MELLOW LIVING»",
+      "AUTHOR": "Кухар Михайло",
+      "YEAR": 2024,
+      "TECHNIQUE": "Blender",
+      "DESCRIPTION": "Дизайн інтер’єру квартири виконаний у теплому мінімалістичному стилі з функціональним зонуванням. Простір поділений на дві частини: зона комунікації (кухня та вітальня) і зона відпочинку (спальня та кабінет). Кожна зона має власний санвузол, що забезпечує комфорт та зручність для мешканців.",
+      "SLOT_ID": "SLOT_06"
+    },
+    {
+      "WORK_ID": "W07",
+      "FILE": "WORK_07.jpg",
+      "TITLE": "Дизайн інтер'єру «OPEN HARMONY»",
+      "AUTHOR": "Кухар Михайло",
+      "YEAR": 2024,
+      "TECHNIQUE": "Blender",
+      "DESCRIPTION": "Концепція інтер’єру «OPEN HARMONY» базується на просторовому балансі між активними та тихими зонами. Центром оселі є відкритий простір кухні, вітальні та балкона для спілкування, тоді як майстер-спальня з власною ванною гарантує приватність для відпочинку. Поєднання вишуканих матеріалів та освітлення об’єднує різні функціональні зони у гармонійне та цілісне середовище.",
+      "SLOT_ID": "SLOT_07"
+    },
+    {
+      "WORK_ID": "W08",
+      "FILE": "WORK_08.jpg",
+      "TITLE": "Візуалізація предметів для інтер'єру",
+      "AUTHOR": "Кухар Михайло",
+      "YEAR": 2025,
+      "TECHNIQUE": "3Ds Max",
+      "DESCRIPTION": "Це сучасний інтер’єр із м’якою, пластичною геометрією: тепла фактура дерева, округлі форми столів і м’яких сидінь, акцентні світильники та лаконічний арт-декор на стінах. Кольорова гама тепла й спокійна: домінують бежеві та молочні відтінки, світле дерево, м’які пісочні та кам’яні текстури, доповнені глибокими коричневими, бронзовими й золотистими деталями в металі та декорі.",
+      "SLOT_ID": "SLOT_08"
+    },
+    {
+      "WORK_ID": "W09",
+      "FILE": "WORK_09.jpg",
+      "TITLE": "Студентський простір",
+      "AUTHOR": "Кухар Михайло",
+      "YEAR": 2025,
+      "TECHNIQUE": "Blender",
+      "DESCRIPTION": "Концептуальний проєкт студентського простору у внутрішньому дворі університету.",
+      "SLOT_ID": "SLOT_09"
+    },
+    {
+      "WORK_ID": "W10",
+      "FILE": "WORK_10.jpg",
+      "TITLE": "Progress Builds Up",
+      "AUTHOR": "Кухар Михайло",
+      "YEAR": 2026,
+      "TECHNIQUE": "Photoshop, Blender",
+      "DESCRIPTION": "Постер до III Всеукраїнського конкурсу мотиваційних постерів «BE CREATIVE»",
+      "SLOT_ID": "SLOT_10"
+    },
+   {
+      "WORK_ID": "W11",
+      "FILE": "WORK_11.jpg",
+      "TITLE": "Перший постер «Свято ліній і форми»",
+      "AUTHOR": "Кухар Михайло",
+      "YEAR": 2023,
+      "TECHNIQUE": "Photoshop, Blender",
+      "DESCRIPTION": "Дизайн постеру за темою 130 років з дня народження Василя Єрмилова.",
+      "SLOT_ID": "SLOT_11"
+    },
+   {
+      "WORK_ID": "W12",
+      "FILE": "WORK_12.jpg",
+      "TITLE": "Другий постер «Свято ліній і форми»",
+      "AUTHOR": "Кухар Михайло",
+      "YEAR": 2023,
+      "TECHNIQUE": "Photoshop, Blender",
+      "DESCRIPTION": "Дизайн постеру за темою 130 років з дня народження Василя Єрмилова.",
+      "SLOT_ID": "SLOT_12"
+    },
+   {
+      "WORK_ID": "W13",
+      "FILE": "WORK_13.jpg",
+      "TITLE": "Постер «Moonlit Blade»",
+      "AUTHOR": "Кухар Михайло",
+      "YEAR": 2026,
+      "TECHNIQUE": "Photoshop, Blender",
+      "DESCRIPTION": "Постер для конкурсу «Animayo».",
+      "SLOT_ID": "SLOT_13"
+    },
+   {
+      "WORK_ID": "W14",
+      "FILE": "WORK_14.jpg",
+      "TITLE": "Постер «Convergence»",
+      "AUTHOR": "Кухар Михайло",
+      "YEAR": 2026,
+      "TECHNIQUE": "Photoshop, Blender",
+      "DESCRIPTION": "Постер для конкурсу «Animayo».",
+      "SLOT_ID": "SLOT_14"
+    },
+   {
+      "WORK_ID": "W15",
+      "FILE": "WORK_15.jpg",
+      "TITLE": "«MELODY»",
+      "AUTHOR": "Кухар Михайло, Василь Єромилов",
+      "YEAR": 2023,
+      "TECHNIQUE": "Blender",
+      "DESCRIPTION": "Постер до Відкритої міжнародної дизайн-акції «КОНСТРУКТИВІЗМ. ВАСИЛЬ ЄРМИЛОВ. 3D», тема «СВІТЛО». Натхненно роботою Василя Єромилова «Гітара».",
+      "SLOT_ID": "SLOT_15"
+    },
+   {
+      "WORK_ID": "W16",
+      "FILE": "WORK_16.jpg",
+      "TITLE": "«GREENLIGHT»",
+      "AUTHOR": "Кухар Михайло, Василь Єромилов",
+      "YEAR": 2023,
+      "TECHNIQUE": "Blender",
+      "DESCRIPTION": "Постер до Відкритої міжнародної дизайн-акції «КОНСТРУКТИВІЗМ. ВАСИЛЬ ЄРМИЛОВ. 3D», тема «СВІТЛО». Натхненно роботою «Дама з віялом».",
+      "SLOT_ID": "SLOT_16"
+    },
+   {
+      "WORK_ID": "W17",
+      "FILE": "WORK_17.jpg",
+      "TITLE": "RHYTHM",
+      "AUTHOR": "Кухар Михайло, Віктор Сервранкс",
+      "YEAR": 2023,
+      "TECHNIQUE": "Blender",
+      "DESCRIPTION": "Постер до Відкритої міжнародної дизайн-акції «КОНСТРУКТИВІЗМ. ВАСИЛЬ ЄРМИЛОВ. 3D», тема «СВІТЛО». Натхненно роботою «Haven — Opus 2».",
+      "SLOT_ID": "SLOT_17"
+    },
+   {
+      "WORK_ID": "W18",
+      "FILE": "WORK_18.jpg",
+      "TITLE": "«CITY»",
+      "AUTHOR": "Кухар Михайло, Фелікс дель Марль",
+      "YEAR": 2023,
+      "TECHNIQUE": "Blender",
+      "DESCRIPTION": "Постер до Відкритої міжнародної дизайн-акції «КОНСТРУКТИВІЗМ. ВАСИЛЬ ЄРМИЛОВ. 3D», тема «СВІТЛО». Натхненно роботою «Composition».",
+      "SLOT_ID": "SLOT_18"
+    }
+  ]
+}
